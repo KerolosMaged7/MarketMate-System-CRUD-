@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketMate System</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container bg-light shadow p-4 rounded-3 mt-5">
+    <h1 class="text-center mb-4">MarketMate System</h1>
+    <div class="mb-3">
+        <label for="productNameInput">product Name:</label>
+        <input oninput="validationName()" class="form-control" type="text" name="" id="productNameInput">     
+        <div id="nameMessage" class="alert alert-danger d-none">you should enter a Name starts with capital letter and should be between 3 and 12 letters </div>
+    </div>
+    <div class="mb-3">
+        <label for="productPriceInput">product Price:</label>
+        <input oninput="validationInput()" class="form-control" type="number" name="" id="productPriceInput">       
+        <div id="priceMessage" class="alert alert-danger d-none">Product price must be a number with up to 2 decimal places and can include an optional currency symbol like $, €, or ₹.</div>
+    </div>
+    <div class="mb-3">
+        <label for="productCategoryInput">product Category:</label>
+        <input oninput="validationCategory()" class="form-control" type="text" name="" id="productCategoryInput">
+        <div id="categoryMessage" class="alert alert-danger d-none">you should enter a Category starts with capital letter and should be between 3 and 12 letters  </div>      
+    </div>
+    <div class="mb-3">
+        <label for="productDescriptionInput">product Description :</label>
+        <textarea oninput="validationDescription()" class="form-control" name="" id="productDescriptionInput"> </textarea>
+        <div id="descriptionMessage" class="alert alert-danger d-none">Product descriptions must be 5-500 characters and use only letters, numbers, spaces, and basic punctuation. </div>  
+    </div>
+    <button class="btn btn-primary w-100 mb-3" onclick="addProduct()" id="addBtn">Add Product</button>
+    <button class="btn btn-primary w-100 mb-3 d-none" onclick="updateProduct()" id="updateBtn">Update Product</button>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <input id="searchInput" oninput="searchByName()" type="search" class="form-control w-50" placeholder="Search By Name...">
+        <input id="categorySearchInput" oninput="searchByCategory()" type="search" class="form-control w-50" placeholder="Search By Category...">
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/test.js"></script>
+</body>
+</html>

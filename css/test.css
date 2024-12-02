@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    margin: 40px auto;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4e54c8;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #4e54c8;
+}
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #4e54c8;
+    background-color: #f9f9f9;
+    color: #333333;
+    padding: 10px;
+    font-size: 1rem;
+}
+.form-control:focus {
+    outline: none;
+    border-color: #8f94fb;
+    box-shadow: 0px 0px 10px rgba(142, 148, 251, 0.5);
+}
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.btn:hover {
+    background: linear-gradient(90deg, #8f94fb, #4e54c8);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+.d-flex .form-control {
+    margin-right: 10px;
+}
+.table {
+    background-color: #ffffff;
+    color: #333333;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+thead th {
+    background-color: #4e54c8;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: none;
+}
+tbody td {
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+.btn-sm {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+.btn-warning {
+    background: #ffaf1d;
+    border: none;
+    color: #ffffff;
+}
+.btn-warning:hover {
+    background: #ffc847;
+}
+.btn-danger {
+    background: #e74c3c;
+    border: none;
+    color: #ffffff;
+}
+.btn-danger:hover {
+    background: #ff6f61;
+}
